@@ -1,4 +1,4 @@
-
+package Bloque1;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -11,7 +11,7 @@ public class Ejercicio4 {
         
         try {
             
-            BufferedInputStream entrada = new BufferedInputStream(new FileInputStream("foto.jpg"));
+            BufferedInputStream entrada = new BufferedInputStream(new FileInputStream("./Bloque1/foto.jpg"));
 
             BufferedOutputStream salida = new BufferedOutputStream(new FileOutputStream("foto_copia_buffer.jpg"));
 
