@@ -8,6 +8,9 @@ public class Ejemplo1T2 {
         
         try {
             
+            int palabras = 0;
+            int numeros = 0;
+
             StreamTokenizer streamTokenizer = new StreamTokenizer(new FileReader("./Bloque1/datosT2.txt"));
 
             //Configurar para que el cáracter de nueva linea sea interpretado
@@ -16,13 +19,17 @@ public class Ejemplo1T2 {
             while (streamTokenizer.nextToken() != StreamTokenizer.TT_EOF) {
                 if (streamTokenizer.ttype == StreamTokenizer.TT_WORD) {
                     System.out.println("Palabra: " + streamTokenizer.sval);   // token de tipo palabra
+                    palabras++;
                 } else if (streamTokenizer.ttype == StreamTokenizer.TT_NUMBER) {
                     System.out.println("Numero: " + streamTokenizer.nval);   // token de tipo número
+                    numeros++;
                 } else if (streamTokenizer.ttype == StreamTokenizer.TT_EOL) {
                     System.out.println(" Salto de línea");                       // fin de línea
                 }
             }
 
+            System.out.println("Hay " + palabras + " palabras y " + numeros + " numeros");
+            
         }catch (Exception e) {
             e.printStackTrace();
         }
