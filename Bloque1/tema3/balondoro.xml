@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE libraries [
+<!ELEMENT libraries (library+)>
+<!ELEMENT library (name, books)>
+<!ATTLIST library location CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT books (book+)>
+<!ELEMENT book (title, author, genre, year)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+]>
+
+<libraries>
+    <library location="España">
+        <name>Nominados al Balón de Oro</name>
+        <books>
+            <book>
+                <title>Kylian Mbappé</title>
+                <author>Real Madrid</author>
+                <genre>Delantero</genre>
+                <year>2026</year>
+            </book>
+            <book>
+                <title>Lamine Yamal</title>
+                <author>FC Barcelona</author>
+                <genre>Delantero</genre>
+                <year>2026</year>
+            </book>
+            <book>
+                <title>Rapinha</title>
+                <author>FC Barcelona</author>
+                <genre>Delantero</genre>
+                <year>2026</year>
+            </book>
+            <book>
+                <title>Fabián Ruiz</title>
+                <author>Paris Saint-Germain</author>
+                <genre>Centrocampista</genre>
+                <year>2026</year>
+            </book>
+        </books>
+    </library>
+
+    <library location="Francia">
+        <name>Nominados Internacionales</name>
+        <books>
+            <book>
+                <title>Ousmane Dembélé</title>
+                <author>Paris Saint-Germain</author>
+                <genre>Delantero</genre>
+                <year>2026</year>
+            </book>
+            <book>
+                <title>Vitinha</title>
+                <author>Paris Saint-Germain</author>
+                <genre>Centrocampista</genre>
+                <year>2026</year>
+            </book>
+            <book>
+                <title>Achraf Hakimi</title>
+                <author>Paris Saint-Germain</author>
+                <genre>Defensa</genre>
+                <year>2026</year>
+            </book>
+        </books>
+    </library>
+</libraries>
