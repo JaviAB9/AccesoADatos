@@ -58,7 +58,7 @@ public class Ejercicio5 {
 
 
         } catch (Exception e) {
-            // TODO: handle exception
+            e.printStackTrace();
         }
     }
 }

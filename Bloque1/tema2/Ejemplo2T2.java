@@ -9,15 +9,15 @@ public class Ejemplo2T2 {
         try {
             
             LineNumberReader ln = new LineNumberReader(new FileReader("./Bloque1/datosT2.txt"));
-            String line;
+            String linea;
 
-            while ((line = ln.readLine()) != null) {
-                System.out.println("Contenido de la linea: " + ln.getLineNumber());
+            while ((linea = ln.readLine()) != null) {
+                System.out.println("Contenido de la linea: " + ln.getLineNumberReader.getLineNumber() + ": " + linea);
                 System.out.println(line);
             }
 
         } catch (Exception e) {
-            // TODO: handle exception
+            e.printStackTrace();
         }
     }
 }

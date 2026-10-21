@@ -30,9 +30,8 @@ public class Ejemplo1T2 {
 
             System.out.println("Hay " + palabras + " palabras y " + numeros + " numeros");
             
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
-        
 }            
